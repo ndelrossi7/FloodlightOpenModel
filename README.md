@@ -1,7 +1,7 @@
 # Using Data from Floodlight Open to Predict Multiple Sclerosis
 
 ## The data
-[Floodlight Open](https://www.floodlightopen.com/en-US) is an open study for healthy controls or patients with multiple sclerosis (MS). The goal is to be able to monitor a patient's progression over time using various tests from a smartphone app. These tests can include mood assessments, hand strength, balance, and general mobility. From a smartphone, Floodlight Open has been able to reference some of the key assessments done by neurologists on MS patients. 
+[Floodlight Open](https://www.floodlightopen.com/en-US) is an open study by [Genentech](https://www.gene.com/) for healthy controls or patients with multiple sclerosis (MS). The goal is to be able to monitor a patient's progression over time using various tests from a smartphone app. These tests can include mood assessments, hand strength, balance, and general mobility. From a smartphone, Floodlight Open has been able to reference some of the key assessments done by neurologists on MS patients. 
 
 ## The goal
 The aim of this project is to use the data collected from MS patients and healthy controls to see whether or not it is possible to predict multiple sclerosis from these tests administered by Floodlight Open. 
@@ -18,3 +18,4 @@ A number of participants in the study completely multiple tests multiple times, 
 I also calculated age and body mass index from the time, height, and weight data given. 
 
 ## Models used
+Due to the inherent covariance associated with many of these tests, I ran a partial component analysis (PCA) followed by logistic regression, random forest, and XGBoost. However, none of these models were very strong. I then ran random forest with tuned hyperparameters on my cleaned and engineered data. This resulted in an accuracy rate of 85.47%. 
