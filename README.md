@@ -31,3 +31,6 @@ I also plotted the feature importances of this model and found that variance in 
 </p>
 
 ## Future Applications and Importance
+Having the ability to predict whether or not someone has multiple sclerosis using these tools may be beneficial in the initial diagnosis process. Specifically for patients whose charts and medical history may point to similar diseases such as clinically isolated syndrome (CIS) or neuromyelitis optica (NMO). Further, by including a patient's disease course (RRMS, secondary progressive MS (SPMS), or primary progressive MS (PPMS)), this may be helpful in predicting which disease course a patient may exhibit. 
+
+This kind of model could also be adapted to include additional patient data such as more robust depression scores, strength tests, and vision tests. Perhaps an extended dataset and model would be helpful in predicting time-specific information for each disease course. For example, a prediction of when a patient's RRMS will progress to SPMS. 
