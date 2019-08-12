@@ -19,3 +19,15 @@ I also calculated age and body mass index from the time, height, and weight data
 
 ## Models used
 Due to the inherent covariance associated with many of these tests, I ran a partial component analysis (PCA) followed by logistic regression, random forest, and XGBoost. However, none of these models were very strong. I then ran random forest with tuned hyperparameters on my cleaned and engineered data. This resulted in an accuracy rate of 85.47%. 
+
+<p align="center">
+  <img src="figs/RMcm.png">
+</p>
+
+I also plotted the feature importances of this model and found that variance in mobility was the most important feature. This makes a lot of sense when considering a RRMS patient's symptoms. 
+
+<p align="center">
+  <img src="figs/RFimportance.png">
+</p>
+
+## Future Applications and Importance
