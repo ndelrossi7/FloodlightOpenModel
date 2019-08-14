@@ -18,7 +18,7 @@ A number of participants in the study completely multiple tests multiple times, 
 I also calculated age and body mass index from the time, height, and weight data given. 
 
 ## Models used
-Due to the inherent covariance associated with many of these tests, I ran a partial component analysis (PCA) followed by logistic regression, random forest, and XGBoost. However, none of these models were very strong. I then ran random forest with tuned hyperparameters on my cleaned and engineered data. This resulted in an accuracy rate of 85.47%. 
+Due to the inherent covariance associated with many of these tests, I ran a principal component analysis (PCA) followed by logistic regression, random forest, and XGBoost. However, none of these models were very strong. I then ran random forest with tuned hyperparameters on my cleaned and engineered data. This resulted in an accuracy rate of 85.47%. 
 
 <p align="center">
   <img src="figs/RMcm.png">
